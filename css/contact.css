@@ -1,0 +1,122 @@
+/* =============================================================
+   CONTACT PAGE
+   ============================================================= */
+
+.contact-page {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s12) var(--s4);
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    align-items: flex-start;
+    padding: var(--s8) var(--s2);
+  }
+}
+
+.contact-page__inner {
+  max-width: 540px;
+  width: 100%;
+  text-align: center;
+}
+
+.contact-page__inner h1 {
+  font-size: var(--text-h2);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: var(--s3);
+}
+
+.contact-page__inner > p {
+  font-size: var(--text-lg);
+  color: var(--text-2);
+  line-height: 1.7;
+  margin-bottom: var(--s6);
+}
+
+/* Primary CTA */
+.contact-page__primary {
+  margin-bottom: var(--s6);
+}
+
+/* Divider with "or" */
+.contact-divider {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  margin: var(--s4) 0;
+}
+
+.contact-divider::before,
+.contact-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+.contact-divider span {
+  font-size: var(--text-xs);
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+
+/* Email section */
+.contact-page__email-section {
+  margin-bottom: var(--s6);
+}
+
+.contact-page__email-section p {
+  font-size: var(--text-base);
+  color: var(--text-2);
+  margin-bottom: var(--s2);
+}
+
+.contact-page__email-section a {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--accent-light);
+}
+
+/* Also on */
+.contact-page__also-on {
+  margin-top: var(--s6);
+  padding-top: var(--s6);
+  border-top: 1px solid var(--border);
+}
+
+.contact-page__also-on p {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  margin-bottom: var(--s2);
+}
+
+.contact-page__also-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--s3);
+}
+
+.contact-page__also-links a {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: var(--text-2);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.contact-page__also-links a:hover {
+  color: var(--accent-light);
+  opacity: 1;
+}
+
+.contact-page__also-links a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}

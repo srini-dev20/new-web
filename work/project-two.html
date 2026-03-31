@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- REPLACE: Update title with the real project name and your name -->
+  <title>AI Tool Launch Page · Your Name</title>
+  <meta name="description" content="Marketing site for an AI writing assistant targeting content teams. Built in Framer with dark mode and AI chatbot.">
+
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://yourdomain.com/work/project-two.html">
+  <meta property="og:title"       content="AI Tool Launch Page · Your Name">
+  <meta property="og:description" content="Marketing site for an AI writing assistant targeting content teams. Built in Framer with dark mode and AI chatbot.">
+  <meta property="og:image"       content="https://yourdomain.com/images/og-image.png">
+  <meta name="twitter:card"       content="summary_large_image">
+
+  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/nav.css">
+  <link rel="stylesheet" href="../css/work.css">
+
+  <script>
+    (function(){try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(_){}}());
+  </script>
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">Your Name</a><!-- REPLACE -->
+
+      <ul class="nav__links" role="list">
+        <li><a href="../work.html" aria-current="page">Work</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav__actions">
+        <button class="theme-toggle" aria-label="Switch to light mode" type="button">
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <a href="../contact.html" class="btn btn-primary btn-sm nav-cta">Book a call →</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <ul role="list">
+      <li><a href="../work.html">Work</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <a href="../contact.html" class="btn btn-primary overlay-cta">Book a call →</a>
+  </div>
+
+  <!-- ═══ MAIN ═══ -->
+  <main id="main">
+    <article class="case-study">
+
+      <a href="../work.html" class="case-study__back fade-up">← Back to work</a>
+
+      <!-- Hero image -->
+      <div class="case-study__hero-image fade-up" aria-hidden="true">
+        <!-- REPLACE: <img src="../images/project-two-hero.jpg" alt="AI Tool Launch Page — hero screenshot"> -->
+        Project screenshot · 16:9
+      </div>
+
+      <!-- Title + subtitle -->
+      <h1 class="case-study__title fade-up">AI Tool Launch Page</h1>
+      <p class="case-study__subtitle fade-up">
+        <!-- REPLACE: One sentence summary of the project outcome -->
+        A dark-mode marketing site for an AI writing assistant — built to convert
+        sceptical content teams into confident trial signups.
+      </p>
+
+      <!-- Metadata row -->
+      <div class="case-study__meta fade-up" role="list" aria-label="Project details">
+        <span class="case-study__meta-item" role="listitem">
+          <!-- REPLACE: Actual timeline -->
+          Timeline: 7 days
+        </span>
+        <span class="case-study__meta-sep" aria-hidden="true">·</span>
+        <span class="case-study__meta-item" role="listitem">Tool: Framer</span>
+        <span class="case-study__meta-sep" aria-hidden="true">·</span>
+        <span class="case-study__meta-item" role="listitem">Category: AI SaaS · Dark mode · Chatbot</span>
+      </div>
+
+      <!-- The problem -->
+      <section class="case-study__section fade-up" aria-label="The problem">
+        <h2>The problem</h2>
+        <p>
+          <!-- REPLACE: Describe the real problem you were solving -->
+          AI writing tools are a crowded space. The original site leaned on generic
+          claims — "write faster", "10x your output" — that every competitor also
+          uses. The product had a genuinely differentiated workflow feature, but it
+          was buried in a long feature list. Visitors left without understanding what
+          made it worth switching to.
+        </p>
+      </section>
+
+      <!-- What I built -->
+      <section class="case-study__section fade-up" aria-label="What I built">
+        <h2>What I built</h2>
+        <p>
+          <!-- REPLACE: Describe what you actually built -->
+          A dark-mode Framer site that leads with the differentiator — not a feature
+          list, but a concrete before/after demonstration of the workflow. The hero
+          shows an interactive demo GIF. Below that: a tight value prop, social proof
+          from content teams specifically, a Chatbase chatbot for objection handling,
+          and a single pricing plan with a clear free-trial CTA. SEO meta, OG tags,
+          and a sitemap included at handoff.
+        </p>
+      </section>
+
+      <!-- Key decisions -->
+      <section class="case-study__section fade-up" aria-label="Key decisions">
+        <h2>Key decisions</h2>
+        <div class="case-study__decisions">
+
+          <div class="case-study__decision">
+            <span class="case-study__decision-label">
+              <!-- REPLACE: Decision label -->
+              Dark mode default
+            </span>
+            <p>
+              <!-- REPLACE: Explain the decision and why it mattered -->
+              Content teams work late and live in dark interfaces. Defaulting to dark
+              mode isn't just aesthetic — it signals that this tool was built for
+              people who take their craft seriously.
+            </p>
+          </div>
+
+          <div class="case-study__decision">
+            <span class="case-study__decision-label">
+              <!-- REPLACE: Decision label -->
+              Chatbot over FAQ
+            </span>
+            <p>
+              <!-- REPLACE: Explain the decision -->
+              A static FAQ requires the visitor to find their objection in a list.
+              The Chatbase chatbot lets them ask exactly what they're worried about.
+              Conversion lift on AI-tool pages tends to be higher when objections are
+              handled conversationally.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Result -->
+      <section class="case-study__section fade-up" aria-label="Result">
+        <h2>Result</h2>
+        <p>
+          <!-- REPLACE: Describe the outcome -->
+          This is a concept redesign of a real AI writing tool. The build demonstrates
+          how I approach AI-category products: lead with the differentiated workflow,
+          reduce friction at signup, and use a chatbot to handle the "but can it
+          actually do X?" questions that block conversion. If you're launching something
+          in the AI space, I'd love to talk.
+        </p>
+      </section>
+
+      <!-- Bottom CTA -->
+      <div class="case-study__cta fade-up">
+        <p>Working on a SaaS launch?</p>
+        <a href="../contact.html" class="btn btn-primary">Book a call →</a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner container">
+      <p>© 2026 Your Name · Built with HTML &amp; CSS</p><!-- REPLACE -->
+      <nav class="footer__links" aria-label="Footer links">
+        <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer">LinkedIn</a><!-- REPLACE -->
+        <a href="https://upwork.com/freelancers/placeholder" target="_blank" rel="noopener noreferrer">Upwork</a><!-- REPLACE -->
+        <a href="mailto:hello@yourdomain.com">Email</a><!-- REPLACE -->
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/nav.js"></script>
+
+</body>
+</html>

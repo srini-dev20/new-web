@@ -1,0 +1,67 @@
+/* =============================================================
+   DESIGN TOKENS
+   All colours and spacing values are defined here.
+   Every other CSS file must reference these variables only —
+   no hardcoded colour or spacing values elsewhere.
+   ============================================================= */
+
+:root {
+  /* ── Colours: Dark mode (default) ── */
+  --bg-base:     #0A0A0A;
+  --bg-surface:  #111111;
+  --bg-elevated: #1A1A1A;
+  --border:      #222222;
+  --text-1:      #F5F5F5;
+  --text-2:      #888888;
+  --text-3:      #555555;
+  --accent:      #6366F1;
+  --accent-light:#818CF8;
+  --accent-bg:   #1E1B4B;
+
+  /* ── Typography scale ── */
+  --text-hero: clamp(38px, 5.5vw, 60px);
+  --text-h2:   clamp(26px, 3.5vw, 40px);
+  --text-h3:   22px;
+  --text-lg:   18px;
+  --text-base: 16px;
+  --text-sm:   13px;
+  --text-xs:   12px;
+
+  /* ── 8px spacing grid ── */
+  --s1:  8px;
+  --s2:  16px;
+  --s3:  24px;
+  --s4:  32px;
+  --s6:  48px;
+  --s8:  64px;
+  --s12: 96px;
+
+  /* ── Layout ── */
+  --max-width: 1120px;
+  --nav-height: 64px;
+
+  /* ── Border radius ── */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-pill: 100px;
+
+  /* ── Nav background (surface at 85% opacity) ── */
+  --nav-bg: rgba(17, 17, 17, 0.85);
+}
+
+/* ── Light mode overrides ── */
+[data-theme="light"] {
+  --bg-base:     #FFFFFF;
+  --bg-surface:  #F7F7F8;
+  --bg-elevated: #EFEFEF;
+  --border:      #E2E2E2;
+  --text-1:      #0A0A0A;
+  --text-2:      #555555;
+  --text-3:      #888888;
+  --accent:      #4F46E5;
+  --accent-light:#6366F1;
+  --accent-bg:   #EEF2FF;
+
+  --nav-bg: rgba(247, 247, 248, 0.85);
+}

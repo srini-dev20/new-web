@@ -1,0 +1,139 @@
+/* =============================================================
+   ABOUT PAGE
+   ============================================================= */
+
+.about-page {
+  padding: var(--s12) 0;
+}
+
+@media (max-width: 768px) { .about-page { padding: var(--s8) 0; } }
+@media (max-width: 480px) { .about-page { padding: var(--s6) 0; } }
+
+.about-page__inner {
+  max-width: 780px;
+}
+
+/* ── Header ── */
+.about-page__header {
+  margin-bottom: var(--s8);
+}
+
+.about-page__header h1 {
+  font-size: var(--text-h2);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin-bottom: var(--s3);
+}
+
+.about-page__header p {
+  font-size: var(--text-lg);
+  color: var(--text-2);
+  line-height: 1.7;
+  max-width: 600px;
+}
+
+/* ── Profile grid ── */
+.about-page__grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--s8);
+  align-items: start;
+  margin-bottom: var(--s8);
+}
+
+.about-page__image {
+  width: 240px;
+  aspect-ratio: 1;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-3);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  border: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .about-page__grid {
+    grid-template-columns: 1fr;
+    gap: var(--s4);
+  }
+
+  .about-page__image {
+    width: 160px;
+    font-size: 24px;
+  }
+}
+
+/* ── Content sections ── */
+.about-page__section {
+  margin-bottom: var(--s6);
+  padding-bottom: var(--s6);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-page__section:last-of-type {
+  border-bottom: none;
+}
+
+.about-page__section h3 {
+  font-size: var(--text-h3);
+  margin-bottom: var(--s3);
+}
+
+.about-page__section p {
+  font-size: var(--text-base);
+  color: var(--text-2);
+  line-height: 1.75;
+}
+
+/* Specialisation list */
+.about-page__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: var(--s2);
+}
+
+.about-page__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  font-size: var(--text-base);
+  color: var(--text-2);
+  line-height: 1.5;
+}
+
+.about-page__list li::before {
+  content: '→';
+  color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Tool pills */
+.about-page__tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s1);
+  margin-top: var(--s3);
+}
+
+/* ── CTA ── */
+.about-page__cta {
+  margin-top: var(--s8);
+  padding-top: var(--s6);
+  border-top: 1px solid var(--border);
+}
+
+.about-page__cta p {
+  font-size: var(--text-base);
+  color: var(--text-2);
+  margin-bottom: var(--s3);
+}
