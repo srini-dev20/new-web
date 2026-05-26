@@ -27,12 +27,23 @@
 
 /* ── Logo / Name ── */
 .nav__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 700;
   font-size: var(--text-base);
   color: var(--text-1);
   text-decoration: none;
   flex-shrink: 0;
   transition: color 200ms ease;
+}
+
+.nav__logo-img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  display: block;
+  border-radius: 5px;
 }
 
 .nav__logo:hover {

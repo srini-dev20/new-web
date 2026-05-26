@@ -4,19 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- REPLACE: Update with your real name -->
-  <title>Contact · Your Name</title>
-  <meta name="description" content="Book a free 20-minute call to talk about your SaaS launch. Fast to start, no commitment.">
+  <title>Contact &mdash; Prashq</title>
+  <meta name="description" content="Contact Prashq for Framer landing-page design and development services.">
 
-  <meta property="og:type"        content="website">
-  <meta property="og:url"         content="https://yourdomain.com/contact.html">
-  <meta property="og:title"       content="Contact · Your Name">
-  <meta property="og:description" content="Book a free 20-minute call to talk about your SaaS launch.">
-  <meta property="og:image"       content="https://yourdomain.com/images/og-image.png">
-  <meta name="twitter:card"       content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prashq.com/contact.html">
+  <meta property="og:title" content="Contact | Prashq">
+  <meta property="og:description" content="Contact Prashq for Framer landing-page design and development services.">
+  <meta property="og:image" content="https://prashq.com/images/logo.png">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -24,114 +22,85 @@
   <link rel="stylesheet" href="css/tokens.css">
   <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/nav.css">
-  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/legal.css">
 
   <script>
     (function(){try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.setAttribute('data-theme','light');}catch(_){}}());
   </script>
 </head>
 <body>
-
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- ═══ NAV ═══ -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="index.html" class="nav__logo">Your Name</a><!-- REPLACE -->
-
+      <a href="/index.html" class="nav__logo">
+        <img src="images/logo.png" alt="Prashq logo" class="nav__logo-img">
+        <span>Prashq</span>
+      </a>
       <ul class="nav__links" role="list">
-        <li><a href="work.html">Work</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="/work.html">Work</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html" aria-current="page">Contact</a></li>
       </ul>
-
       <div class="nav__actions">
         <button class="theme-toggle" aria-label="Switch to light mode" type="button">
-          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"/>
-            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-          </svg>
-          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="contact.html" class="btn btn-primary btn-sm nav-cta" aria-current="page">Book a call →</a>
-        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button">
-          <span></span><span></span><span></span>
-        </button>
+        <a href="/contact.html" class="btn btn-primary btn-sm nav-cta" aria-current="page">Book a call &rarr;</a>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
 
   <div class="nav__overlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
     <ul role="list">
-      <li><a href="work.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/work.html">Work</a></li>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/contact.html">Contact</a></li>
     </ul>
-    <a href="contact.html" class="btn btn-primary overlay-cta">Book a call →</a>
+    <a href="/contact.html" class="btn btn-primary overlay-cta">Book a call &rarr;</a>
   </div>
 
-  <!-- ═══ MAIN ═══ -->
   <main id="main">
-    <div class="contact-page">
-      <div class="contact-page__inner">
-
-        <h1 class="fade-up">Let's talk about your launch.</h1>
-
-        <p class="fade-up">
-          The fastest way to start is a 20-minute call. We'll cover what you need,
-          what I'd build, and whether it makes sense to work together.
-        </p>
-
-        <div class="contact-page__primary fade-up">
-          <!-- REPLACE: Update href with your real Calendly link -->
-          <a
-            href="https://calendly.com/placeholder"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-          >
-            Book a 20-min call →
-          </a>
+    <section class="legal-page">
+      <div class="container">
+        <div class="legal-page__inner">
+          <h1>Contact</h1>
+          <p>Prashq provides Framer landing-page design and development services for B2B SaaS and technology companies.</p>
+          <p>Prashq is a service brand operated by Srinivasan Ranganathan, based in India.</p>
+          <p>For project inquiries, payment questions, or support related to an existing project, contact:</p>
+          <p>Email: <a href="mailto:contact@prashq.com">contact@prashq.com</a></p>
+          <p>Location: India</p>
+          <p>Typical project inquiries should include:</p>
+          <ul>
+            <li>Your company website</li>
+            <li>What your product does</li>
+            <li>The main action your landing page should drive</li>
+            <li>Your target buyer</li>
+            <li>Any timeline or launch deadline</li>
+            <li>Relevant product screenshots, demo links, or brand assets if available</li>
+          </ul>
+          <p>Prashq usually responds to relevant project inquiries by email.</p>
+          <p class="legal-page__meta">Last updated: May 2026</p>
         </div>
-
-        <div class="contact-divider fade-up" role="separator">
-          <span>or</span>
-        </div>
-
-        <div class="contact-page__email-section fade-up">
-          <p>Prefer email?</p>
-          <!-- REPLACE: hello@yourdomain.com with your real email address -->
-          <a href="mailto:hello@yourdomain.com" class="btn btn-secondary">
-            hello@yourdomain.com
-          </a>
-        </div>
-
-        <div class="contact-page__also-on fade-up">
-          <p>Also on:</p>
-          <div class="contact-page__also-links">
-            <!-- REPLACE: Update both profile URLs -->
-            <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://upwork.com/freelancers/placeholder" target="_blank" rel="noopener noreferrer">Upwork</a>
-          </div>
-        </div>
-
       </div>
-    </div>
+    </section>
   </main>
 
-  <!-- ═══ FOOTER ═══ -->
   <footer class="footer" role="contentinfo">
     <div class="footer__inner container">
-      <p>© 2026 Your Name · Built with HTML &amp; CSS</p><!-- REPLACE -->
+      <div class="footer__brand">
+        <p>© 2026 Prashq</p>
+        <p>Prashq is operated by Srinivasan Ranganathan, India.</p>
+        <p>Contact: <a href="mailto:contact@prashq.com">contact@prashq.com</a></p>
+      </div>
       <nav class="footer__links" aria-label="Footer links">
-        <a href="https://linkedin.com/in/placeholder" target="_blank" rel="noopener noreferrer">LinkedIn</a><!-- REPLACE -->
-        <a href="https://upwork.com/freelancers/placeholder" target="_blank" rel="noopener noreferrer">Upwork</a><!-- REPLACE -->
-        <a href="mailto:hello@yourdomain.com">Email</a><!-- REPLACE -->
+        <a href="/terms.html">Terms &amp; Conditions</a>
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/refund-cancellation.html">Refund &amp; Cancellation Policy</a>
+        <a href="/shipping-delivery.html">Shipping / Digital Delivery Policy</a>
+        <a href="/contact.html" aria-current="page">Contact</a>
       </nav>
     </div>
   </footer>
@@ -139,6 +108,5 @@
   <script src="js/theme.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/nav.js"></script>
-
 </body>
 </html>

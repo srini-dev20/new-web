@@ -163,9 +163,15 @@
 .offer-card__price {
   font-size: var(--text-base);
   color: var(--text-2);
-  margin-bottom: var(--s3);
-  padding-bottom: var(--s3);
-  border-bottom: 1px solid var(--border);
+  margin-bottom: var(--s2);
+}
+
+.offer-card__included {
+  font-size: var(--text-sm);
+  color: var(--text-3);
+  margin-bottom: var(--s2);
+  padding-top: var(--s3);
+  border-top: 1px solid var(--border);
 }
 
 .offer-card__checklist {
@@ -333,6 +339,26 @@
   letter-spacing: -0.02em;
   flex-shrink: 0;
   border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.theme-about-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.theme-about-image--light {
+  display: none;
+}
+
+[data-theme="light"] .theme-about-image--dark {
+  display: none;
+}
+
+[data-theme="light"] .theme-about-image--light {
+  display: block;
 }
 
 .about-snippet__text .label {
